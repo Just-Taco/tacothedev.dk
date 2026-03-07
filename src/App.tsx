@@ -1,5 +1,4 @@
 import { TopographyBackground } from "@/components/ui/topography"
-import { DivideSquare } from "lucide-react"
 import { useEffect, useState } from "react"
 import {
   DiCode,
