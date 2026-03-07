@@ -73,10 +73,10 @@ export function App() {
           <h1 className="mt-10 text-2xl font-semibold text-white">About me</h1>
           <p className="w-[70%] text-pretty text-muted-foreground">
             I am a 19-year-old developer from Denmark currently pursuing an
-            education as a Datatekniker with a focus on Programming. My journey
-            started in 2020 with a curiosity for how game worlds are built, and
-            it has since evolved into a passion for building scalable, modern
-            web applications.
+            education as a Computer technician with a focus on Programming. My
+            journey started in 2020 with a curiosity for how game worlds are
+            built, and it has since evolved into a passion for building
+            scalable, modern web applications.
           </p>
           <h3 className="mt-5 text-2xl text-white">
             The Journey: From Lua to Full-Stack
