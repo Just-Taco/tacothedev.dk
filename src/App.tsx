@@ -48,6 +48,7 @@ export function App() {
     <TopographyBackground className="pointer-none -z-10 overflow-y-auto">
       <div className="z-10 flex min-h-dvh w-screen flex-col justify-center px-5 md:px-40">
         {/* 1st row */}
+
         <div className="flex flex-col items-center justify-between gap-10 md:flex-row">
           <header className="mt-8 flex flex-col">
             <h1 className="text-6xl font-bold text-white">tacothedev</h1>
@@ -58,11 +59,15 @@ export function App() {
           <div className="flex items-center gap-4">
             <div className="p-2">
               <p className="text-lg font-semibold text-white">Coding since</p>
-              <p className="text-md font-bold text-muted-foreground">2020</p>
+              <p className="font-time text-xl font-bold text-muted-foreground">
+                2020
+              </p>
             </div>
             <div className="p-2">
               <p className="text-lg font-semibold text-white">My local time</p>
-              <p className="text-md font-bold text-muted-foreground">{time}</p>
+              <p className="font-time text-xl font-bold text-muted-foreground">
+                {time}
+              </p>
             </div>
           </div>
         </div>
@@ -72,11 +77,11 @@ export function App() {
         <div>
           <h1 className="mt-10 text-2xl font-semibold text-white">About me</h1>
           <p className="w-[70%] text-pretty text-muted-foreground">
-            I am a 19-year-old developer from Denmark currently pursuing an
-            education as a Computer technician with a focus on Programming. My
-            journey started in 2020 with a curiosity for how game worlds are
-            built, and it has since evolved into a passion for building
-            scalable, modern web applications.
+            I am a {new Date().getFullYear() - 2007}-year-old developer from
+            Denmark currently pursuing an education as a Computer technician
+            with a focus on Programming. My journey started in 2020 with a
+            curiosity for how game worlds are built, and it has since evolved
+            into a passion for building scalable, modern web applications.
           </p>
           <h3 className="mt-5 text-2xl text-white">
             The Journey: From Lua to Full-Stack
@@ -104,7 +109,9 @@ export function App() {
             </li>
           </ul>
         </div>
+
         {/* 3rd row */}
+
         <div>
           <h1 className="mt-10 text-2xl font-semibold text-white">
             My techstack
@@ -136,10 +143,12 @@ export function App() {
             <DiGithubBadge size={50} color="#ffffff" />
           </div>
         </div>
+
         {/* 4th row */}
+
         <footer>
           <p className="text-center text-sm text-muted-foreground">
-            © 2026 tacothedev. All rights reserved.
+            © {new Date().getFullYear()} tacothedev. All rights reserved.
           </p>
         </footer>
       </div>
