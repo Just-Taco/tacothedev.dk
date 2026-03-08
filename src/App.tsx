@@ -45,11 +45,11 @@ export function App() {
   }, [])
 
   return (
-    <TopographyBackground className="pointer-none -z-10 overflow-auto">
-      <div className="z-10 flex h-screen w-screen flex-col justify-center px-5 md:px-40">
+    <TopographyBackground className="pointer-none -z-10 overflow-y-auto">
+      <div className="z-10 flex min-h-dvh w-screen flex-col justify-center px-5 md:px-40">
         {/* 1st row */}
         <div className="flex flex-col items-center justify-between gap-10 md:flex-row">
-          <header className="flex flex-col">
+          <header className="mt-8 flex flex-col">
             <h1 className="text-6xl font-bold text-white">tacothedev</h1>
             <h2 className="text-center text-xl font-semibold text-muted-foreground md:text-start">
               Full stack developer
